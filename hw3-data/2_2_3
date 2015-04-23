@@ -1,0 +1,10 @@
+from numpy import *
+
+def main():
+	arr = array([0])
+	for i in range(1, 50):
+		arr = concatenate(arr, array([i]), axis=0)
+	print arr
+
+if __name__ == '__main__':
+	main()
